@@ -4,10 +4,10 @@ import { useRecoilValue } from "recoil";
 import { pokemonListFilteredSelector } from "../states/selectors";
 
 const PokemonList = () => {
-  const pokemonListFiltered = useRecoilValue(pokemonListFilteredSelector);
+  const pokemonList = useRecoilValue(pokemonListFilteredSelector);
   return (
     <div>
-      {pokemonListFiltered.map((pokemon, index) => {
+      {pokemonList.map((pokemon, index) => {
         return (
           <div key={index}>
             <img
