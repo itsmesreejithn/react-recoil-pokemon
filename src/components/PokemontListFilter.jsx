@@ -8,10 +8,30 @@ const PokemontListFilter = () => {
   };
   return (
     <div>
-      <button onClick={() => onFilterClick(filter)}>show all</button>
-      <button onClick={() => onFilterClick("show_fire")}>show fire</button>
-      <button onClick={() => onFilterClick("show_water")}>show water</button>
-      <button onClick={() => onFilterClick("show_plant")}>show plant</button>
+      <button
+        onClick={() => onFilterClick(filter)}
+        className="btn btn-outline-primary me-2"
+      >
+        show all
+      </button>
+      <button
+        onClick={() => onFilterClick("show_fire")}
+        className="btn btn-outline-primary me-2"
+      >
+        show fire
+      </button>
+      <button
+        onClick={() => onFilterClick("show_water")}
+        className="btn btn-outline-primary me-2"
+      >
+        show water
+      </button>
+      <button
+        onClick={() => onFilterClick("show_plant")}
+        className="btn btn-outline-primary me-2"
+      >
+        show plant
+      </button>
     </div>
   );
 };
