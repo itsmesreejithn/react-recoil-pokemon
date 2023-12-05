@@ -1,12 +1,13 @@
 import React from "react";
-import { pokemonListAtom } from "../states/atoms";
+// import { pokemonListAtom } from "../states/atoms";
 import { useRecoilValue } from "recoil";
+import { pokemonListFilteredSelector } from "../states/selectors";
 
 const PokemonList = () => {
-  const pokemonList = useRecoilValue(pokemonListAtom);
+  const pokemonListFiltered = useRecoilValue(pokemonListFilteredSelector);
   return (
     <div>
-      {pokemonList.map((pokemon, index) => {
+      {pokemonListFiltered.map((pokemon, index) => {
         return (
           <div key={index}>
             <img
