@@ -59,3 +59,10 @@ export const pokemonListAtom = atom({
           },
     ]
 })
+
+export const pokemonListFiltersAtom = atom(
+    {
+        key: "pokemonListFiltersAtom",
+        default: "show_all",
+    }
+)

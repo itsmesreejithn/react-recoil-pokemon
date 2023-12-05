@@ -1,7 +1,12 @@
 import React from "react";
+import { useRecoilState } from "recoil";
+import { pokemonListFiltersAtom } from "../states/atoms";
 
 const PokemontListFilter = () => {
-  const onFilterClick = (filter) => {};
+  const [filter, setFilter] = useRecoilState(pokemonListFiltersAtom);
+  const onFilterClick = (filter) => {
+    setFilter(filter);
+  };
   return (
     <div>
       <button onClick={onFilterClick(filter)}>show all</button>
