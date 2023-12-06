@@ -9,7 +9,7 @@ const PokemontListFilter = () => {
   return (
     <div>
       <button
-        onClick={() => onFilterClick(filter)}
+        onClick={() => onFilterClick("show_all")}
         className="btn btn-outline-primary me-2"
       >
         show all
